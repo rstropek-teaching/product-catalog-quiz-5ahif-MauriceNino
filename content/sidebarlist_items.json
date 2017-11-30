@@ -1,0 +1,15 @@
+[
+	{
+		"icon":"fa-cutlery",
+        "a_name":"home",
+        "a_desc":"Bestellübersicht"
+	},{
+		"icon":"fa-cog",
+        "a_name":"settings",
+        "a_desc":"Einstellungen"
+	},{
+		"icon":"fa-users",
+        "a_name":"contacts",
+        "a_desc":"Kontakt"
+	}
+]

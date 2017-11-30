@@ -1,0 +1,37 @@
+<script>
+    $(document).on("change","input[type=radio]",function(){
+            var country=$('[name="lang"]:checked').val();
+            var Image = document.getElementById("countryImg");
+            var head = document.getElementById("countryHead");
+            head.innerHTML = country;
+            Image.src = "images/countries/"+country+".jpg"
+        });
+</script>
+<div class="DbSetting_base">
+    <table>
+      <tr>
+        <td style="width: 30%; vertical-align: baseline;">
+          <form style="margin-top: 6%" >
+            <input type="radio" name="lang" value="Österreich" checked> Deutsch<br>
+            <input type="radio" name="lang" value="England"> English<br>
+          </form>
+        </td>
+        <td>
+          <table class="DbSettings_tab">
+            <thead>
+              <th class="DbSetting_header" id="countryHead">Österreich</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img id="countryImg" src="images/Countries/Österreich.jpg" alt="Country " ></td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2"><button class="opener" type="button" style="float: right; margin-right: 0%; width:100px">anwenden</button></td>
+      </tr>
+    </table>
+  </div>
+  

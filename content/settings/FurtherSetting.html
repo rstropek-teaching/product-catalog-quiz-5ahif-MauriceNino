@@ -1,0 +1,225 @@
+<script>
+    function selected(item){
+             if(item.style.backgroundColor != 'green'){
+               item.style.backgroundColor = 'green';
+
+             }else {
+               item.style.backgroundColor = '#EEEEFE';
+             }
+           }
+</script>
+<div class="DbSetting_base">
+    <article class="infobox" style="padding-left: 5%;">
+      <section id="unternehmen">
+        <h2><a href="#unternehmen">Unternehmen</a></h2>
+        <table>
+          <tr>
+            <td style="vertical-align: baseline;">
+              <table class="DbSettings_tab">
+                <thead>
+                  <tr>
+                    <th colspan="2" class="DbSetting_header" style="padding-left: 10px;">Add/Edit Mitarbeiter</th>
+                  </tr>
+                </thead>
+                <tbody style="border: 2px solid black;">
+                  <tr>
+                    <td style="padding-left: 10px;">Name:</td>
+                    <td><input type="text" name="BUName" placeholder="Max Mustermann" maxlength="30"></td>
+                  </tr>
+                  <tr>
+                    <td style="padding-left: 10px;">Geburtstag:</td>
+                    <td><input type="date" name="BUName" maxlength="100"></td>
+                  </tr>
+                  <tr>
+                    <td style="padding-left: 10px;">Arbeitstage:</td>
+                    <td>
+                      <table>
+                        <tr>
+                          <td>
+                            <div class="Day" id="Mo" onclick=selected(this)>
+                              M
+                            </div>
+                          </td>
+                          <td>
+                            <div class="Day" id="Di" onclick=selected(this)>
+                              <p>D</p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="Day" id="Mi" onclick=selected(this)>
+                              <p>M</p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="Day" id="Do" onclick=selected(this)>
+                              <p>D</p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="Day" id="Fr" onclick=selected(this)>
+                              <p>F</p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="Day" id="Sa" onclick=selected(this)>
+                              <p>S</p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="Day" id="So" onclick=selected(this)>
+                              <p>S</p>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" ><button type="button" onclick="alert('Hello world!')" style="float: right; margin-right: 10%">Add/Edit</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td style="padding-left: 5%;  ">
+              <table class="DbSettings_tab">
+                <thead>
+                  <tr>
+                    <th colspan="2" class="DbSetting_header" style="padding-left: 10px;">Add/Edit Laden</th>
+                  </tr>
+                </thead>
+                <tbody style="border: 2px solid black;">
+                  <tr>
+                    <td style="padding-left: 10px;">Name:</td>
+                    <td><input type="text" name="BUName" placeholder="Laden Name" maxlength="30"></td>
+                  </tr>
+                  <tr>
+                    <td style="padding-left: 10px;">Standort:</td>
+                    <td><input type="text" name="BUName" placeholder="Musterstraße 1" maxlength="100"></td>
+                  </tr>
+                  <tr>
+                    <td style="padding-left: 10px; vertical-align: baseline;">Öffnungszeiten:</td>
+
+
+                    <td>
+                      <table style="padding-left: 10px;">
+                        <tr>
+                          <td>Mo:</td>
+                          <td><input type="time" name="timeFrom"></td>
+                          <td>-</td>
+                          <td><input type="time" name="timeTo"></td>
+                        </tr>
+                        <tr>
+                          <td>Di:</td>
+                          <td><input type="time" name="timeFrom"></td>
+                          <td>-</td>
+                          <td><input type="time" name="timeTo"></td>
+                        </tr>
+                        <tr>
+                          <td>Mi:</td>
+                          <td><input type="time" name="timeFrom"></td>
+                          <td>-</td>
+                          <td><input type="time" name="timeTo"></td>
+                        </tr>
+                        <tr>
+                          <td>Do:</td>
+                          <td><input type="time" name="timeFrom"></td>
+                          <td>-</td>
+                          <td><input type="time" name="timeTo"></td>
+                        </tr>
+                        <tr>
+                          <td>Fr:</td>
+                          <td><input type="time" name="timeFrom"></td>
+                          <td>-</td>
+                          <td><input type="time" name="timeTo"></td>
+                        </tr>
+                        <tr>
+                          <td>Sa:</td>
+                          <td><input type="time" name="timeFrom"></td>
+                          <td>-</td>
+                          <td><input type="time" name="timeTo"></td>
+                        </tr>
+                        <tr>
+                          <td>So:</td>
+                          <td><input type="time" name="timeFrom"></td>
+                          <td>-</td>
+                          <td><input type="time" name="timeTo"></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" ><button type="button" onclick="alert('Hello world!')" style="float: right; margin-right: 10%">Add/Edit</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </section>
+      <section id="zutaten">
+        <h2><a href="#zutaten">Zutaten</a></h2>
+        <table>
+          <tr>
+            <td>
+              <table class="DbSettings_tab">
+                <thead>
+                  <tr>
+                    <th colspan="2" class="DbSetting_header" style="padding-left: 10px;">Add/Edit Mitarbeiter</th>
+                  </tr>
+                </thead>
+                <tbody style="border: 2px solid black;">
+                  <tr>
+                    <td style="padding-left: 10px;">Name:</td>
+                    <td><input type="text" name="BUName" placeholder="AlergenName" maxlength="30"></td>
+                  </tr>
+                  <tr>
+                    <td style="padding-left: 10px;">Abkürzung:</td>
+                    <td><input type="text" name="BUName" placeholder="AlergenAbkürzung" maxlength="1"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" ><button type="button" onclick="alert('Hello world!')" style="float: right; margin-right: 10%">Add/Edit</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td>
+              <table class="DbSettings_tab">
+                <thead>
+                  <tr>
+                    <th colspan="2" class="DbSetting_header" style="padding-left: 10px;">Add/Edit Mitarbeiter</th>
+                  </tr>
+                </thead>
+                <tbody style="border: 2px solid black;">
+                  <tr>
+                    <td style="padding-left: 10px;">Name:</td>
+                    <td><input type="text" name="BUName" placeholder="Zutat Name" maxlength="30"></td>
+                  </tr>
+                  <tr>
+                    <td style="padding-left: 10px;">Allergene:</td>
+                    <td>
+                      <select class="alg" id="algs">
+                        <option class="algcl" value="algcl1">Gluten</option>
+                        <option class="algcl" value="algcl2">Nüsse</option>
+                        <option class="algcl" value="algclv3">Ei</option>
+                      </select>
+                      <button type="button" onclick="addAlg()">+</button>
+                    </td>
+                  </tr>
+                  <tr id="container">
+
+                  </tr>
+                  <tr>
+                    <td colspan="2" ><button type="button" onclick="alert('Hello world!')" style="float: right; margin-right: 10%">Add/Edit</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </section>
+    </article>
+  </div>

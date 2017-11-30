@@ -1,0 +1,86 @@
+<script>
+    $(document).ready(function () {
+            $('.group').hide();
+            $('#option1').show();
+            $('#Monitors').change(function () {
+              $('.group').hide();
+              $('#'+$(this).val()).show();
+            })
+    });
+</script>
+<div class="DbSetting_base">
+    <select id="Monitors">
+      <option value="option1">1 Monitor</option>
+      <option value="option2">2 Monitore</option>
+      <option value="option3">3 Monitore</option>
+    </select>
+
+    <div id="option1" class="group">
+      <table class="DbSettings_tab">
+        <thead>
+          <th class="DbSetting_header" id="countryHead">Vorschau</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="images/monitors/monitorOne.jpg" alt="Vorschau"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="option2" class="group">
+
+      <table>
+
+        <tr>
+          <td style="vertical-align: baseline; width: 15%; padding-top: 3%;">
+            Seiten einrichen </br></br>
+            Seite 1 </br>
+            <select class="Pages" id="Page1_1">
+              <option value="-">-</option>
+              <option class="option1_1" value="option1_1">wird vorbereitet</option>
+              <option class="option2_1" value="option2_1">ist vorbereitet</option>
+              <option class="option3_1" value="option3_1">wird abgehlot</option>
+            </select> </br>
+            <select class="Pages" id="Page1_2">
+              <option value="-">-</option>
+              <option class="option1_1" value="option1_1">wird vorbereitet</option>
+              <option class="option2_1" value="option2_1">ist vorbereitet</option>
+              <option class="option3_1" value="option3_1">wird abgehlot</option>
+            </select> </br></br>
+            Seite 2 </br>
+            <select class="Pages" id="Page2_1">
+              <option value="-">-</option>
+              <option class="option1_1" value="option1_1">wird vorbereitet</option>
+              <option class="option2_1" value="option2_1">ist vorbereitet</option>
+              <option class="option3_1" value="option3_1">wird abgehlot</option>
+            </select>
+          </td>
+          <td>
+            <table class="DbSettings_tab">
+              <thead>
+                <th class="DbSetting_header" id="countryHead">Vorschau</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><img src="images/monitors/monitorTwo.jpg" alt="Vorschau"></td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+    </div>
+    <div id="option3" class="group">
+      <table class="DbSettings_tab">
+        <thead>
+          <th class="DbSetting_header" id="countryHead">Vorschau</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="images/monitors/monitorThree.jpg" alt="Vorschau"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

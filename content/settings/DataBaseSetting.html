@@ -1,0 +1,122 @@
+<script>
+  $(function() {
+            $( "#dialog-1" ).dialog({
+               autoOpen: false,
+            });
+            $( ".opener" ).click(function() {
+               $( "#dialog-1" ).dialog( "open" );
+            });
+            $("#accept").click(function(){
+              $("#dialog-1").dialog("close");
+            });
+         });
+</script>
+<div class="DbSetting_base">
+  <table style="width:70%">
+    <tr>
+      <td>
+        <table class="DbSettings_tab">
+          <thead>
+            <tr>
+              <th colspan="2" class="DbSetting_header" style="padding-left: 10px;">Backup Einstellungen</th>
+            </tr>
+          </thead>
+          <tbody style="border: 2px solid black;">
+            <tr>
+              <td style="padding-left: 10px;">Name:</td>
+              <td><input type="text" name="BUName" placeholder="Backup Name" maxlength="30"></td>
+            </tr>
+            <tr>
+              <td style="padding-left: 10px;">Speicherort:</td>
+              <td><input type="text" name="BUName" placeholder="Pfad zB. C://backups" maxlength="100"></td>
+            </tr>
+            <tr>
+              <td style="padding-left: 10px;">Häufigkeit:</td>
+              <td>
+                <select>
+                  <option value="daily">Täglich</option>
+                  <option value="twoDays">jeden 2. Tag</option>
+                  <option value="weekly">Wöchentlich</option>
+                  <option value="twoWeeks">jede 2. Woche</option>
+                  <option value="Monthly">Monatlich</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" ><button type="button" onclick="alert('Hello world!')" style="float: right; margin-right: 10%">anwenden</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+      <td>
+        <table class="DbSettings_tab">
+          <thead>
+            <tr>
+              <th colspan="2" class="DbSetting_header" style="padding-left: 10px;">Backup laden</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding-left: 10px;">Speicherort:</td>
+              <td><input type="text" name="BUName" placeholder="Pfad zB. C://backups" maxlength="100"></td>
+            </tr>
+              <td colspan="2" ><button type="button" onclick="alert('Hello world!')" style="float: right; margin-right: 10%">laden</button></td>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <table class="DbSettings_tab">
+          <thead>
+            <tr>
+              <th colspan="2" class="DbSetting_header" style="padding-left: 10px;">Backup erstellen</th>
+            </tr>
+          </thead>
+          <tbody style="border: 2px solid black;">
+            <tr>
+              <td style="padding-left: 10px;">Name:</td>
+              <td><input type="text" name="BUName" placeholder="Sonder Backup" maxlength="30"></td>
+            </tr>
+            <tr>
+              <td style="padding-left: 10px;">Speicherort:</td>
+              <td><input type="text" name="BUName" placeholder="Pfad zB. C://backups" maxlength="100"></td>
+            </tr>
+            <tr>
+              <td colspan="2" ><button type="button" onclick="alert('Hello world!')" style="float: right; margin-right: 10%">erstellen</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+      <td>
+        <table class="DbSettings_tab">
+          <thead>
+            <tr>
+              <th colspan="2" class="DbSetting_header" style="padding-left: 10px;">Tabelle löschen (Daten)</th>
+            </tr>
+          </thead>
+          <tbody style="border: 2px solid black;">
+            <tr>
+              <td style="padding-left: 10px;">Name:</td>
+              <td>
+                <select>
+                  <option value="a_ingridients">a_ingridients</option>
+                  <option value="a_allergen">a_allergen</option>
+                  <option value="a_ingAllergen">a_ingAllergen</option>
+                  <option value="a_productIngridients">a_productIngridients</option>
+                  <option value="a_user">a_user</option>
+                  <option value="a_session">a_session</option>
+                  <option value="a_order">a_order</option>
+                  <option value="a_orderedProds">a_orderedProds</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" ><button type="button" onclick="alert('Hello world!')" style="float: right; margin-right: 10%">löschen</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
