@@ -19,7 +19,7 @@ session_start();
   <script async type="text/javascript" src="external/js/pageresizer_compressed.js"></script>
   <script async type="text/javascript" src="external/js/menuctrl_compressed.js"></script>
   <script async type="text/javascript" src="external/js/buttonactions_compressed.js"></script>
-  <script async type="text/javascript" src="external/js/homescreenmanager_compressed.js"></script>
+  <script async type="text/javascript" src="external/js/homescreenmanager_compressed.js"></script>-->
 
   <!-- Dev Code -->
   <link rel="stylesheet" type="text/css" href="external/css/style.css" />
