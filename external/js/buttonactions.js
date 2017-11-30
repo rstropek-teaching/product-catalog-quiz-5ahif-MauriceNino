@@ -146,6 +146,67 @@ $(document.body).on('click', '#popup_box_bg' ,function(){
 })
 
 
+
+$(document.body).on('click', '#main_topbar_productsearch_searchicon', ()=>{
+  if($("#main_topbar_productsearch_searchicon").hasClass("fa-search")){
+    $("#main_topbar_productsearch_searchicon").removeClass("fa-search")
+    $("#main_topbar_productsearch_searchicon").addClass("fa-times")
+    $("#main_topbar_productsearch_searchicon").css("margin-right", "20px")
+    $("#main_topbar_productsearch").css("width", "400px")
+    $("#main_topbar_productsearch_input").css("width", "330px")
+    $("#main_topbar_productsearch_input").css("padding", "10px")
+    $("#main_topbar_productsearch_input").focus()
+  }else{
+    $("#main_topbar_productsearch_searchicon").removeClass("fa-times")
+    $("#main_topbar_productsearch_searchicon").addClass("fa-search")
+    $("#main_topbar_productsearch_searchicon").css("margin-right", "15px")
+    $("#main_topbar_productsearch").css("width", "60px")
+    $("#main_topbar_productsearch_input").css("width", "0px")
+    $("#main_topbar_productsearch_input").css("padding", "0px")
+    $("#main_topbar_productsearch_input").blur()
+    $("#main_topbar_productsearch_input").val("")
+    execute_product_search()
+  }
+})
+
+let act_vers=get_url_search_var("mode")
+console.log(act_vers)
+
+
+function change_to_raster(){
+  act_vers="raster"
+  $("#product_list_settingsbar_listraster_switch_raster").css("opacity", "1.0")
+  $("#product_list_settingsbar_listraster_switch_list").css("opacity", "0.3")
+  change_url_search_var("mode", act_vers)
+  
+  $(".product_base").each((index, elem)=>{
+    $(elem).removeClass("listform")
+  })
+}
+function change_to_list(){
+  console.log("change")
+  act_vers="list"
+  $("#product_list_settingsbar_listraster_switch_raster").css("opacity", "0.3")
+  $("#product_list_settingsbar_listraster_switch_list").css("opacity", "1.0")
+  change_url_search_var("mode", act_vers)
+
+  $(".product_base").each((index, elem)=>{
+    $(elem).addClass("listform")
+  })
+}
+
+
+$(document.body).on('click', '#product_list_settingsbar_listraster_switch_raster', ()=>{
+  if(act_vers!="raster"){
+    change_to_raster()
+  }
+})
+$(document.body).on('click', '#product_list_settingsbar_listraster_switch_list', ()=>{
+  if(act_vers!="list"){
+    change_to_list()
+  }
+})
+
 function enable_order_input_button(){
   $("#home_content_right_top_enter").removeClass("gray")
   $(document.body).on('click', '#home_content_right_top_enter', function(){

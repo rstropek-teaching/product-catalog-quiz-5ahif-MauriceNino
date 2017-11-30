@@ -27,6 +27,7 @@ session_start();
   <script async type="text/javascript" src="external/js/pageresizer.js"></script>
   <script async type="text/javascript" src="external/js/menuctrl.js"></script>
   <script async type="text/javascript" src="external/js/buttonactions.js"></script>
+  <script async type="text/javascript" src="external/js/homescreenmanager.js"></script>
 </head>
 <body>
   <div id="main_screen" >
@@ -57,10 +58,12 @@ session_start();
       <nav id="main_header">
         <div id="main_topbar">
           <a id="main_topbar_heading" href="home" onclick="return false;">Product View Example</a>
+          <div id="main_topbar_logo"></div>
           <div id="main_topbar_productsearch">
             <!-- Searchbar will be here -->
+            <input id="main_topbar_productsearch_input" type="text" placeholder="Product name"></input>
+            <i id="main_topbar_productsearch_searchicon" class="fa fa-search" aria-hidden="true"></i>
           </div>
-          <div id="main_topbar_logo"></div>
         </div>
         <div id="main_sidebar">
           <ul class="sidebar_list">
