@@ -5,25 +5,5 @@
     "email": "mauricenino98@gmail.com",
     "skype": "maurice.earthqaqe",
     "tel":"+43 660 4030105"
-  },{
-    "imgFilePath":"images/contacts/fabian_proemer.png",
-    "name":"Fabian Prömer",
-    "email": "fabs.proemer@gmail.com",
-    "skype": "fabian-proemer",
-    "tel":"+43 650 8521915"
-  },{
-    "imgFilePath":"images/contacts/stefan_gornik.png",
-    "name":"Stefan Gornik",
-    "email": "sgornik@gmx.at",
-    "skype": "/",
-    "tel":"+43 660 5684387"
-  },{
-    "imgFilePath":"images/contacts/matthias_benkner.png",
-    "name":"Matthias Benkner",
-    "email": "matzi.benki@gmail.com",
-    "skype": "/",
-    "tel":"+43 664 2282259"
   }
-
-
 ]

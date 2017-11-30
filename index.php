@@ -5,10 +5,10 @@ session_start();
 <html>
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="AdminPanel and UI for the Employees of a School Buffet">
-  <meta name="keywords" content="School, Buffet, Order, Armbrosia, AdminPanel ">
+  <meta name="description" content="ProductView for products">
+  <meta name="keywords" content="Products, View ">
   <meta name="viewport" content="width=device-width, initial-scale=0.7">
-  <title>Ambrosia AdminPanel</title>
+  <title>Product View</title>
   <link rel="shortcut icon" href="images/icon/main_icon.ico">
   <link rel="stylesheet" type="text/css" href="external/css/font-awesome.min.css">
 
@@ -56,19 +56,6 @@ session_start();
 
     <div id="main_page">
       <nav id="main_header">
-        <!-- Mobile View (Not implemented)
-        <table id="mobile_menu_bar_table" style="width: 100%; height: 100%; display: none;">
-          <tbody style="height: 100%;">
-            <tr style="height: 100%;">
-              <td id="mobile_menu_bar_site_name_container" style="height: 100%;">
-                <p id="mobile_menu_bar_site_name" style="color: white; font-size: 40px; font-family: Arial; padding-left: 30px;">Ambrosia</p>
-              </td>
-              <td id="mobile_menu_button_container" style="width: 90px; height: 100%; background-color: #A1CBFF" align="right">
-                <i id="mobile_menu_button" class="fa fa-bars fa-3x" style="display:none;"></i>
-              </td>
-            </tr>
-          </tbody>
-        </table>-->
         <div id="main_topbar">
           <a id="main_topbar_heading" href="home" onclick="return false;">Ambrosia</a>
           <div id="main_topbar_logo"></div>
